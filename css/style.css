@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
-body{font: 300 17px/1.47 'Roboto', sans-serif;;
+body{font: 300 17px/1.47 'Roboto', sans-serif;
+	background-color: #f4f4f1;
+	color: #3d3935;
 }
 
 /* Layout */
@@ -33,12 +35,21 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	min-height: 46px;
+	line-height: 46px;
+	color: #bc204b;
+	border: 1px solid #bc204b;
+	padding: 0 18px;
+	border-radius: 23px;
+
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
-
+text-decoration: none;
+background-color: #bc204b;
+color: #fff;
 }
 
 input[type="text"],
@@ -92,6 +103,15 @@ textarea {
 	color: inherit;
 }
 .ba-page-title{
+	font-weight: 300;
+	font-size: 60px;
+	margin-bottom: 10px;
+
+}
+.ba-page-subtitle{
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 22px;
+	margin-bottom: 50px;
 
 }
 .ba-intro__iner{
@@ -99,7 +119,7 @@ textarea {
 	z-index: 2;
 }
 .ba-iner__links{
-	max-width: 630px;
+	max-width: 650px;
 	margin: 0 auto;
 }
 .ba-intro__video{
@@ -122,4 +142,86 @@ textarea {
 	opacity: 0.8;
 	background: #ac0835;
 	background: linear-gradient(to bottom, #ac0835, #982657);
+}
+.ba-link-box{
+	display: flex;
+	font-size: 16px;
+	
+}
+.ba-link-box:hover{
+	text-decoration: none;
+}
+.ba-link-box__icon{
+	flex-shrink: 1;
+	margin-right: 15px;
+	letter-spacing: 0.01em;
+}
+.ba-link-box__title{
+font-size: 17px;
+margin-bottom: 5px;
+letter-spacing: -0.01em;
+}
+.ba-link-box p{
+	margin-bottom: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+.ba-readmore{
+	display: inline-flex;
+	align-items: center;
+}
+.ba-readmore > svg{
+	margin-left: 10px;
+}
+.ba-readmore--yellow{
+	color: #f1b828;
+}
+.ba-readmore--blue{
+	color: #489fdf;
+}
+.ba-link-box .ba-readmore{
+	opacity: 0;
+}
+.ba-link-box:hover .ba-readmore{
+	opacity: 1;
+	transition: 0.3s;
+}
+.ba-hiden{
+	display: none;
+}
+
+.ba-magazine{
+	padding: 110px 0;
+}
+.ba-magazine-heder{
+	margin-bottom: 50px;
+	align-items: center;
+}
+.ba-section-tittle{
+	text-align: center;
+	font-weight: 300;
+	font-size: 45px;
+}
+.ba-magazine-heder .ba-section-tittle{
+	margin-bottom: 0;
+} 
+.ba-slider-buttons{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.ba-slider-buttons button:hover{
+	color: #bc204b;
+}
+.ba-slider-buttons button{
+	padding: 0;
+	border: none;
+	background: none;
+	display: flex;
+	color: #9c9a97;
+}
+.ba-slider-buttons button + button{
+	margin-left: 10px;
+}
+.ba-slider-buttons .ba-button{
+	margin-left: 15px;
 }
